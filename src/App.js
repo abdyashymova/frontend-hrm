@@ -35,9 +35,7 @@ function App() {
                         <StaffRatePage/>
                     </RequireAuth>}/>
                 <Route path="/welcome" element={
-                    <RequireAuth>
-                        <WelcomePage/>
-                    </RequireAuth>}/>
+                        <WelcomePage/>}/>
                 <Route path="/login" element={<LoginPage/>}/>
                 <Route path="/login/password" element={<LoginPasswordPage/>}/>
             </Routes>
