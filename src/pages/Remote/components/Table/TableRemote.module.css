@@ -1,0 +1,8 @@
+.tableBar{
+    width: 100%;
+    margin-top: 22px;
+}
+
+.tableBar div{
+    box-sizing: border-box;
+}

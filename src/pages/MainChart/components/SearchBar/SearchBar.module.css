@@ -1,0 +1,68 @@
+/************* поисквоя панель ************/
+.searchBar{
+    margin: 10px 0 16px;
+    display: flex;
+}
+
+.searchBar div:not(.searchBar div:last-child){
+    height: 56px;
+    margin-right: 16px;
+}
+
+.dateFieldBlock{
+    width: 15%;
+}
+
+.selectFieldBlock{
+    width: 23%;
+}
+
+.searchFieldBlock{
+    width: 32%;
+}
+
+.buttonBlock{
+    width: 10%;
+}
+
+.searchBar input{
+    width: 100%;
+    border: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    background-color: transparent;
+    padding: 5px 0;
+}
+
+.searchBar input:focus-visible{
+    border: 0;
+    outline: 0;
+}
+
+.buttonBlock button {
+    margin-top: 8px;
+}
+
+/****************** выпдающий список отделов *******************/
+.selectFieldBlock select{
+    width: 100%;
+    border: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    padding: 5px 0;
+    background-color: transparent;
+}
+
+.selectFieldBlock select:focus-visible, .selectFieldBlock input:focus-visible{
+    border: 0;
+    outline: 0;
+}
+
+.searchIcon{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%) hue-rotate(147deg) brightness(109%) contrast(102%);
+    margin-right: 5px;
+}

@@ -1,0 +1,206 @@
+/****************** поисковая панель *******************/
+.searchBar{
+    margin: 10px 0 16px;
+    display: flex;
+}
+
+.searchBar div:not(.searchBar div:last-child){
+    height: 56px;
+    margin-right: 16px;
+}
+
+.fieldBlock1{
+    width: 25%;
+}
+
+.fieldBlock2{
+    width: 40%;
+}
+
+.buttonBlock{
+    display: flex;
+    width: 35%;
+}
+
+/****************** выпдающий список отделов *******************/
+.fieldBlock select{
+    width: 100%;
+    border: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    padding: 5px 0;
+    background-color: transparent;
+}
+
+.searchBar select:focus-visible, .searchBar input:focus-visible{
+    border: 0;
+    outline: 0;
+}
+
+/****************** текстовое поле для поиска по ФИО... *******************/
+.iconInside{
+    position:relative;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    padding: 5px 0;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.input::placeholder {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.icon{
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+/****************** кнопка добавить сотрудника *******************/
+.buttonBlock button {
+    margin-top: 8px;
+}
+
+/****************** карточки сотрудников *******************/
+.tableBar{
+
+}
+
+.emplCard{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.emplCard div{
+    box-sizing: border-box;
+}
+
+
+.emplCard div:not(.emplCard div:last-child){
+    margin-right: 16px;
+}
+
+.photo{
+    position: relative;
+    width: 135px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.label1{
+    width: 10%;
+}
+
+.label2{
+    width: 15%;
+}
+
+.labels ul li{
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(30, 30, 30, 0.5);
+}
+
+.data{
+    width: 35%;
+}
+
+.data ul li{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 21px;
+    color: #1E1E1E;
+}
+
+.photo:hover{
+    cursor: pointer;
+}
+
+.photo:hover .camera{
+    display: block;
+}
+
+.camera{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 5px 2px;
+    display: none;
+}
+
+.addPhoto {
+    background-color: #71BF44;
+}
+
+.updatePhoto {
+    background-color: #CCCCCC;
+}
+
+/****************** добавление сотрудника *******************/
+.addUserBar{
+    display: flex;
+    margin: 0 24px 55px 24px;
+}
+
+.addUserBar input{
+    width: 65%;
+    margin-right: 16px;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 48px;
+    padding-left: 16px;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.addUserBar input::placeholder{
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.addUserBar button{
+    width: 35%;
+}
+
+.foundUserBar{
+    margin: -31px 24px 24px 24px;
+}
+
+.foundUserBar .labels {
+    width: 20% !important;
+}
+
+.notFoundUserBar{
+    margin: -24px 24px 24px 24px;
+}
+
+.notFoundUserBar p{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}

@@ -1,0 +1,62 @@
+/****************** добавление фото сотрудника *******************/
+.addPhotoBar{
+    display: flex;
+    margin: 0 24px 55px 24px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: -15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+}
+
+/*************  кнопка выбрать файл ************/
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile1 + label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: #71BF44;
+}
+
+.inputfile1:focus + label,
+.inputfile1.has-focus + label,
+.inputfile1 + label:hover {
+    opacity: 0.7;
+}

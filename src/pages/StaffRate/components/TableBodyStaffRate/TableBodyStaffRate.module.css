@@ -1,0 +1,219 @@
+.tableBody{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.border{
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+}
+
+.tableBody > div{
+    box-sizing: border-box;
+}
+
+.tableBody>div:nth-child(1){
+    width: 3%;
+}
+
+.tableBody>div:nth-child(2){
+    width: 30%;
+}
+
+.tableBody>div:nth-child(3), .tableBody>div:nth-child(4){
+    width: 8%;
+}
+
+.tableBody>div:nth-child(5) {
+    width: 45%;
+}
+
+.tableBody>div:nth-child(6), .tableBody>div:nth-child(7){
+    width: 8%;
+}
+
+.tableBody:hover{
+    cursor: pointer;
+}
+
+.num{
+    background: #F7F7FA;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name{
+    padding: 16px 0 16px 16px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start!important;
+}
+
+.name p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.ratio1{
+    background: #A3CAFA;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.ratioNum1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+}
+
+ .ratio2{
+    background: #6CA2D2;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+ .ratio3{
+     background: #472F91;
+     display: flex;
+     align-items: center;
+     padding: 16px;
+ }
+
+ .ratioNum2{
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 18px;
+     color: #FFFFFF;
+     background-color: transparent;
+     border: 0;
+     width: 100%;
+ }
+
+.comment{
+    padding: 16px;
+}
+
+.comment textarea {
+    width: 100%;
+    border: 0;
+    resize: none;
+    overflow: hidden;
+}
+
+.comment textarea::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.comment textarea:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+
+
+
+
+
+
+
+.tableBarBody .calendar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0!important;
+    box-sizing: border-box;
+}
+
+.square{
+    position: relative;
+    background: #F7F7FA;
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square2{
+    position: relative;
+    background: #F7F7FA;
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    min-width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span, .square2 span{
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.coefficient{
+    width: 5%;
+    background: #472F91;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coefficient span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.allSum{
+    display: flex;
+    flex-wrap: wrap;
+    width: 5%;
+}
+
+.checkMark:hover{
+    background-color: #d7d7d7;
+}
+
+.table1 .freeDay{
+    background: rgba(113, 191, 68, 0.35);
+    border: 0.5px solid #F7F7FA;
+}
+
+.table1 .freeDay span{
+    color: #000000!important;
+}
+
+.table2 .freeDay{
+    background: #71BF44;
+    border: 0.5px solid #FFFFFF;
+}
+
+.table2 .freeDay span{
+    color: #FFFFFF!important;
+}

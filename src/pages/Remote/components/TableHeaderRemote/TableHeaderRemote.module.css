@@ -1,0 +1,52 @@
+/************* header таблицы ************/
+.TableBarHeader{
+    display: flex;
+}
+
+.TableBarHeader > div{
+    box-sizing: border-box;
+}
+
+.TableBarHeader>div:nth-child(1){
+    width: 3%;
+}
+
+.TableBarHeader>div:nth-child(2){
+    width: 25%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    padding: 7px 0 7px 16px;
+}
+
+.TableBarHeader>div:nth-child(3){
+    width: 57%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    padding: 7px 0 7px 16px;
+}
+
+.TableBarHeader>div:nth-child(4), .TableBarHeader>div:nth-child(5), .TableBarHeader>div:nth-child(6)
+{
+    width: 5%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #CCCCCC;
+}
+
+.day{
+    background: #472F91;
+    border: 1px solid #F7F7FA;
+}
+
+.dayTitle{
+    color: #FFFFFF!important;
+}

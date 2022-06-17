@@ -1,0 +1,72 @@
+/************* подсказывающая панель ************/
+.helpBar{
+    display: flex;
+}
+
+.helps{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.helpsBlock{
+    height: 32px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commonSign{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.helpsTitle{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1E1E1E;
+}
+
+/*Отработано*/
+.workedOut{
+    background: #6CA2D2;
+    border: 1px solid #F7F7FA;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/*Командировочные*/
+.mission{
+    background: #F4B4AE;
+    border: 1px solid #F7F7FA;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/*Больничные*/
+.sickLeave{
+    background: #A3CAFA;
+    border: 1px solid #F7F7FA;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/*Отпуск*/
+.furlough{
+    background: #C1AB77;
+    border: 1px solid #F7F7FA;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+/*Коэффициент*/
+.coefficient{
+    background: #472F91;
+    border: 1px solid #F7F7FA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    min-width: 54px!important;
+}

@@ -1,0 +1,40 @@
+/************* header таблицы ************/
+.TableBarHeader{
+    display: flex;
+}
+
+.TableBarHeader > div{
+    box-sizing: border-box;
+}
+
+.TableBarHeader>div:nth-child(1){
+    width: 3%;
+}
+
+.TableBarHeader>div:nth-child(2){
+    width: 25%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    padding: 7px 0 7px 16px;
+}
+
+.TableBarHeader>div:nth-child(3){
+    width: 60%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    padding: 7px 0 7px 16px;
+    margin-right: 8px;
+}
+
+.TableBarHeader>div:nth-child(4), .TableBarHeader>div:nth-child(5), .TableBarHeader>div:nth-child(6),
+.TableBarHeader>div:nth-child(7)
+{
+   max-width: 40px;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #CCCCCC;
+}

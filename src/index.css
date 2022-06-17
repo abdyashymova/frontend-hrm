@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('./media/fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./media/fonts/Nunito-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    font-family: Nunito, sans-serif;
+    background: #F7F7FA;
+}
+
+/************* внешние отступы ************/
+
+.mb-24{
+    margin-bottom: 24px;
+}
+
+.mr-16{
+    margin-right: 16px;
+}
+
+.mt-32{
+    margin-top: 32px;
+}
+
+.mt-8{
+    margin-top: 8px!important;
+}
+
+.my-container{
+    padding: 0 56px;
+}
+
+.wrapper{
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.d-none{
+    display: none!important;
+}
+
+.text-center{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+input:focus-visible{
+    border: 0;
+    outline: 0;
+}
+
+/************* основная кнопка ************/
+.btn{
+    height: 48px;
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.btn:hover{
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+}
+
+.btn:disabled{
+    opacity: 0.5;
+    cursor: auto;
+    box-shadow:none;
+}
+
+.btn-not-allowed{
+    opacity: 0.7;
+    cursor: not-allowed!important;
+}
+
+/*************  кнопка-1 ************/
+.btn-main{
+    background: #71BF44;
+    cursor: pointer;
+}
+
+/*************  кнопка-2 ************/
+.btn-secondary{
+    background: #472F91;
+}
+
+/*************  кнопка-3 ************/
+.btn-not-active{
+    background: rgba(224, 224, 224, 1);
+}
+
+.btn-not-active:hover{
+    pointer-events: none;
+    cursor: default!important;
+    box-shadow: none!important;
+}
+
+/*************  fieldset ************/
+fieldset{
+    border: 0.5px solid #908e8e!important;
+    border-radius: 8px!important;
+    padding: 0 16px 0!important;
+    height: 55px!important;
+    margin: 0!important;
+}
+
+legend{
+    font-weight: 600!important;
+    font-size: 15px!important;
+    line-height: 19px!important;
+    color: #CCCCCC!important;
+    padding: 0 5px!important;
+}
+
+/*************  Модальное окошко ************/
+.modal {
+
+}
+
+.modal .close-bar{
+    display: flex;
+    justify-content: right;
+}
+
+.modal .close {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 17px 17px 25px 0;
+}
+
+.modal > .content {
+    width: 100%;
+}
+
+.popup-content {
+    margin: auto;
+    background: #FFFFFF;
+    width: 40%;
+    border-radius: 16px
+}
+
+[role=tooltip].popup-content {
+    width: 200px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .16);
+    border-radius: 5px
+}
+
+.popup-overlay {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+[data-popup=tooltip].popup-overlay {
+    background: transparent
+}
+
+.popup-arrow {
+    -webkit-filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));
+    filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, .16));
+    color: #fff;
+    stroke-width: 2px;
+    stroke: #d7d7d7;
+    stroke-dasharray: 30px;
+    stroke-dashoffset: -54px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+/************* Пагинация ************/
+.pagination{
+    display: flex;
+    border-radius: 0.25rem;
+    margin: 35px 0;
+}
+
+.page-link{
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.25;
+}
+
+.page-item.active {
+    background-color: #71BF44;
+    color: white;
+    border-radius: 5px;
+}
+
+.page-item:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/*************  Аниимация для модальной окошки ************/
+@keyframes anvil {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    1% {
+        transform: scale(0.96) translateY(10px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+}
+.popup-content {
+    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+
+/*************  таблица основного графика ************/
+.active-cell{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #E06555;
+    height: 8px;
+    width: 8px;
+    border-bottom-right-radius: 6px;
+}
+
+/*************  контекстное меню ************/
+.menu {
+    background: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    border-radius: 0 4px 4px 4px;
+    position: absolute;
+    list-style: none;
+    transition: opacity 0.5s linear;
+    top: 40px;
+    left: 40px;
+    z-index: 9999;
+}
+
+.menu ul li{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1E1E1E;
+    padding: 10px 16px;
+    text-align: left;
+}
+
+.menu ul{
+    margin: 16px 0;
+}
+
+.active-status{
+    background: #A3CAFA;
+}
+
+.s:not(.active-status):hover{
+    background: #cfd1d5dc;
+}

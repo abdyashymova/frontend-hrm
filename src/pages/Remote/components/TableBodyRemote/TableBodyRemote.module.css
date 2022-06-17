@@ -1,0 +1,157 @@
+.tableBarBody{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.tableBarBody > div{
+    box-sizing: border-box;
+}
+
+.tableBarBody>div:nth-child(1){
+    width: 3%;
+}
+
+.tableBarBody>div:nth-child(2){
+    width: 25%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+}
+
+.tableBarBody>div:nth-child(3){
+    width: 57%;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    padding: 7px 0;
+    text-align: center;
+}
+
+.tableBarBody2>.num, .tableBarBody2>.name{
+    background-color: #71BF44!important;
+    color: #FFFFFF!important;
+}
+
+.tableBarBody:hover{
+    cursor: pointer;
+}
+
+.tableBarBody:hover .num{
+    background-color:rgba(113, 191, 68, 0.6);
+    color: #FFFFFF;
+}
+
+.tableBarBody:hover .name{
+    background-color: rgba(113, 191, 68, 0.6);
+    color: #FFFFFF;
+}
+
+.tableBarBody .num{
+    background: #F7F7FA;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableBarBody .name{
+    padding: 16px 0 16px 15px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start!important;
+}
+
+.tableBarBody .name p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.tableBarBody .calendar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0!important;
+    box-sizing: border-box;
+}
+
+.square{
+    position: relative;
+    background: #F7F7FA;
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square2{
+    position: relative;
+    background: #F7F7FA;
+    border: 0.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    min-width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span, .square2 span{
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.coefficient{
+    width: 5%;
+    background: #472F91;
+    border: 1px solid #F7F7FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coefficient span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.allSum{
+    display: flex;
+    flex-wrap: wrap;
+    width: 5%;
+}
+
+.checkMark:hover{
+    background-color: #d7d7d7;
+}
+
+.table1 .freeDay{
+    background: rgba(113, 191, 68, 0.35);
+    border: 0.5px solid #F7F7FA;
+}
+
+.table1 .freeDay span{
+    color: #000000!important;
+}
+
+.table2 .freeDay{
+    background: #71BF44;
+    border: 0.5px solid #FFFFFF;
+}
+
+.table2 .freeDay span{
+    color: #FFFFFF!important;
+}

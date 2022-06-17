@@ -1,0 +1,26 @@
+.profileBar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.logo{
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.profile{
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profileName{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-left: 10px;
+}

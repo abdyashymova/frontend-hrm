@@ -1,0 +1,4 @@
+.searchIcon{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7487%) hue-rotate(147deg) brightness(109%) contrast(102%);
+    margin-right: 5px;
+}
